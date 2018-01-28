@@ -1,0 +1,36 @@
+
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Standings</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-grid *ngFor="let entrant of entrants | orderBy: 'position'; let i = index" (click)="goToProfilePage(entrant)">
+    <ion-row>
+      <ion-col col-2>
+        <div>{{ i+1 }}</div>
+      </ion-col>
+      <ion-col col-6>
+          <div>{{ entrant.fname }} <b>{{ entrant.lname }}</b></div>
+      </ion-col>
+      <ion-col col-2>
+        <div text-left text-uppercase>
+          {{ entrant.country_code }}
+        </div>
+      </ion-col>
+      <ion-col col-2>
+        <div text-right>
+          {{ entrant.points }}
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

@@ -1,0 +1,45 @@
+<!--
+  Generated template for the EntrantprofilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{entrant.fname}} {{entrant.lname}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="card-background-page">
+
+  <ion-card>
+    <img src="https://wallup.net/wp-content/uploads/2017/03/29/493007-Mac_OS_X-Mac_Sierra.jpg"/>
+    <div class="card-title">{{ entrant.fname }} {{ entrant.lname }}</div>
+    <div class="card-subtitle">{{ entrant.school }}</div>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header text-start>
+      Current Standing
+    </ion-card-header>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6>
+          <ion-icon name="ios-trophy" item-start></ion-icon>
+            {{ entrant.position }}
+        </ion-col>
+
+        <ion-col col-6>
+          <ion-icon name="ios-flame" item-start></ion-icon>
+            {{ entrant.points }}
+        </ion-col>
+          </ion-row>
+    </ion-grid>
+
+  </ion-card>
+
+</ion-content>

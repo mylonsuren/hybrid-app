@@ -9,6 +9,7 @@ import { ProfilePage } from '../pages/profile/profile';
 import { StatsPage } from '../pages/stats/stats';
 import { AboutPage } from '../pages/about/about';
 import { EntrantprofilePage } from '../pages/entrantprofile/entrantprofile';
+import { SubmitPage } from '../pages/submit/submit';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -26,7 +27,8 @@ import { Ng2OrderModule } from 'ng2-order-pipe';
     ProfilePage,
     StatsPage,
     AboutPage,
-    EntrantprofilePage
+    EntrantprofilePage,
+    SubmitPage
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,8 @@ import { Ng2OrderModule } from 'ng2-order-pipe';
     ProfilePage,
     StatsPage,
     AboutPage,
-    EntrantprofilePage
+    EntrantprofilePage,
+    SubmitPage
   ],
   providers: [
     StatusBar,

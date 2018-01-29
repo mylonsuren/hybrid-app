@@ -9,6 +9,7 @@ import { ProfilePage } from '../pages/profile/profile';
 import { StatsPage } from '../pages/stats/stats';
 import { AboutPage } from '../pages/about/about';
 import { EntrantprofilePage } from '../pages/entrantprofile/entrantprofile';
+import { SubmitPage } from '../pages/submit/submit';
 
 @Component({
   templateUrl: 'app.html'
@@ -29,7 +30,8 @@ export class MyApp {
       { title: 'Standings', component: EntrantsPage },
       { title: 'Stats', component: StatsPage} ,
       { title: 'Profile', component: ProfilePage },
-      { title: 'About', component: AboutPage }
+      { title: 'About', component: AboutPage },
+      { title: 'Submit', component:SubmitPage}
     ];
 
   }
